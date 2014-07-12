@@ -3,6 +3,11 @@ language: php
 php: 
   - 5.4
 
+env:
+  - LARAVEL_ENV=CI
+  global:
+      - APP_NAME=lacourv2
+      
 before_script: 
   - mkdir -p shippable/testresults
   - mkdir -p shippable/codecoverage
